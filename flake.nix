@@ -14,7 +14,7 @@
     ...
   }: 
     let
-      user = "titus";
+      user = "elek";
     in {
     nixosConfigurations.nixos-studio = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
@@ -25,7 +25,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.titus = import ./config/home.nix;
+          home-manager.users.elek = import ./config/home.nix;
           home-manager.extraSpecialArgs = {inherit inputs self user;};
         }
       ];
