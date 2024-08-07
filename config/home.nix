@@ -1,5 +1,5 @@
 {pkgs, ...}: let
-  username = "titus";
+  username = "elek";
 in {
   imports = [
     ./packages
